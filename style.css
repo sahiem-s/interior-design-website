@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: rgb(255, 255, 255);
+}
+/* Custom font for "UAstudio" in Navbar */
+nav h1 {
+  font-family: 'serif'; /* Replace with your desired font */
+  font-weight: bold; /* Optional for styling */
+  font-size: 60px; /* Adjust font size if needed */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* Logo styling */
+nav .logo {
+  width: 250px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Adds space between the last nav item and the logo */
+}
+
+/* Hero Section */
+.hero {
+  background: url('Screenshot\ 2024-10-31\ 001002.png') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+
+.hero-content {
+  max-width: 1000px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.hero .button {
+  padding: 10px 20px;
+  background: #0066ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Services Section */
+.services {
+  padding: 50px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.service-item {
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+/* About Section */
+.about {
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 400px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea, .contact button {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+  .hero h2 {
+      font-size: 24px;
+  }
+  .hero .button {
+      padding: 8px 16px;
+  }
+}
