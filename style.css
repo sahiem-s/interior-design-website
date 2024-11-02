@@ -49,6 +49,29 @@ nav ul li a:hover {
   color: white;
 }
 
+/* Responsive Navbar for Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start;
+  }
+
+  nav ul {
+    width: 100%; /* Full width for mobile */
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 0; /* Remove left margin on mobile */
+    padding: 10px 0; /* Add padding for spacing */
+  }
+
+  nav ul li a {
+    font-size: 1em; /* Slightly smaller font size for mobile */
+  }
+}
+
 /* Hero Section */
 .hero {
   background: url('Screenshot 2024-10-31 000950.png') center/cover no-repeat;
@@ -274,66 +297,6 @@ footer {
   padding: 20px;
   font-size: 1em;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  nav h1 {
-    font-size: 2em; /* Responsive adjustment */
-  }
-
-  .hero {
-    height: 50vh; /* Adjusted height */
-  }
-
-  .hero h2 {
-    font-size: 1.5em;
-  }
-
-  .hero p {
-    font-size: 1em;
-    margin-bottom: 100px;
-  }
-
-  .contact h2 {
-    font-size: 1.5em;
-  }
-
-  .contact button {
-    font-size: 1em;
-  }
-
-  .social-media h2 {
-    font-size: 1.6em;
-  }
-
-  footer {
-    font-size: 0.9em;
-    padding: 15px 0;
-  }
-
-  .service-item,
-  .design-item {
-    width: 90%; /* Full width for smaller screens */
-    max-width: none; /* Remove max-width */
-  }
-
-  /* Additional adjustments */
-  .design-container {
-    flex-direction: column; /* Stack designs vertically on small screens */
-    align-items: center; /* Center align items */
-  }
-
-  .image-slider-section h2,
-  .services h2 {
-    font-size: 1.8em; /* Smaller font size for headers */
-  }
-
-  /* Adjust button size */
-  .contact button {
-    max-width: 200px; /* Limit width for mobile devices */
-    margin: 20px auto; /* Center button horizontally */
-  }
 }
 
 /* Specific Styles for 375px */
