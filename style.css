@@ -14,11 +14,11 @@ nav {
   background-color: #333;
   color: rgb(255, 255, 255);
 }
-/* Custom font for "UAstudio" in Navbar */
+
 nav h1 {
-  font-family: 'serif'; /* Replace with your desired font */
-  font-weight: bold; /* Optional for styling */
-  font-size: 60px; /* Adjust font size if needed */
+  font-family: 'serif';
+  font-weight: bold;
+  font-size: 50px; /* Adjusted font size for better responsiveness */
 }
 
 nav ul {
@@ -33,126 +33,283 @@ nav ul li {
 nav ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* Logo styling */
-nav .logo {
-  width: 250px; /* Adjust size as needed */
-  height: auto;
-  margin-right: 10px; /* Adds space between the last nav item and the logo */
+nav ul li a.active {
+  color: white;
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  color: white;
 }
 
 /* Hero Section */
 .hero {
-  background: url('Screenshot\ 2024-10-31\ 001002.png') center/cover no-repeat;
-  height: 80vh;
+  background: url('Screenshot\ 2024-10-31\ 000950.png') center/cover no-repeat;
+  height: 60vh; /* Responsive height */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: rgb(255, 255, 255);
-  margin-bottom: 50px;
 }
 
 .hero-content {
   max-width: 1000px;
+  padding: 20px; /* Padding for better content spacing */
 }
 
 .hero h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-  font-weight: bold;
+  font-size: 2em; /* Responsive font size */
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 25px;
-  margin-bottom: 30px;
+  font-size: 1.2em;
+  margin-bottom: 150px;
 }
 
-.hero .button {
-  padding: 10px 20px;
-  background: #0066ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* Portfolio Section */
-.portfolio {
-  padding: 50px;
+/* Image Slider Section */
+.image-slider-section {
   text-align: center;
-  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
-.portfolio-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.image-slider-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.portfolio-item img {
+.image-slider {
   width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 90%; /* Adjusted width for responsive design */
   height: auto;
+  max-height: 350px;
+  object-fit: cover;
   border-radius: 8px;
+}
+
+/* Designs Section */
+.designs {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.design-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.design-item {
+  width: 45%; /* Width adjustment for smaller screens */
+  max-width: 250px;
+  margin: 10px;
+}
+
+.design-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Services Section */
 .services {
-  padding: 50px;
-  background: #f4f4f4;
+  padding: 50px 20px;
+  background-color: #f1f1f1;
   text-align: center;
+  margin-top: 50px;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .service-item {
-  font-size: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
   margin: 10px;
-  margin-bottom: 50px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #666;
 }
 
 /* About Section */
 .about {
-  padding: 50px;
+  padding: 50px 20px;
   text-align: center;
-  margin-bottom: 400px;
+  margin-top: 50px;
 }
 
 /* Contact Section */
 .contact {
-  padding: 50px;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
   text-align: center;
+  margin-top: 80px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .contact form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
-.contact input, .contact textarea, .contact button {
-  margin-top: 10px;
+.contact input,
+.contact textarea {
   padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.contact button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+/* Social Media Section */
+.social-media {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-media h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.social-icon {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-  padding: 20px;
-  text-align: center;
-  background: #333;
+  background-color: #333;
   color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
+  nav h1 {
+    font-size: 1.8em;
   }
+
+  .hero {
+    height: 50vh;
+  }
+
   .hero h2 {
-      font-size: 24px;
+    font-size: 1.5em;
   }
-  .hero .button {
-      padding: 8px 16px;
+
+  .hero p {
+    font-size: 1em;
+    margin-bottom: 100px;
+  }
+
+  .contact h2 {
+    font-size: 1.5em;
+  }
+
+  .contact button {
+    font-size: 1em;
+  }
+
+  .social-media h2 {
+    font-size: 1.6em;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 15px 0;
+  }
+
+  .service-item,
+  .design-item {
+    width: 100%; /* Full width for smaller screens */
   }
 }

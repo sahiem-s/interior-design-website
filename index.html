@@ -3,64 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interior Design Portfolio</title>
+    <title>UAStudio Interior Design</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
   <body>
     <!-- Navbar -->
     <nav>
       <h1>UAStudio</h1>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#designs">Designs</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#home" class="nav-link" onclick="setActiveLink(event)"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#our-designs" class="nav-link" onclick="setActiveLink(event)"
+            >Designs</a
+          >
+        </li>
+        <li>
+          <a href="#services" class="nav-link" onclick="setActiveLink(event)"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="#about" class="nav-link" onclick="setActiveLink(event)"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="nav-link" onclick="setActiveLink(event)"
+            >Contact</a
+          >
+        </li>
       </ul>
-      <img src="UAStudio1.png" alt="UAstudio Logo" class="logo" />
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
       <div class="hero-content">
-        <h2>Crafting Spaces, Creating Dreams</h2>
-        <p>Your vision, our expertise.</p>
-        <a href="#portfolio" class="button">View Designs</a>
+        <h2>Welcome to UAStudio</h2>
+        <p>Your dream space awaits!</p>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-      <h2>Our Designs</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="Screenshot 2024-10-31 001033.png" alt="Project 1" />
+  <!-- Slider for Top Images -->
+<section class="image-slider-section">
+  <h2>Our Designs</h2>
+  <div class="image-slider">
+      <div class="slides">
+          <div class="slide" id="slide1">
+              <img src="Screenshot 2024-11-02 213622.png" alt="Image 1" />
+          </div>
+          <div class="slide" id="slide2">
+              <img src="Screenshot 2024-11-02 214954.png" alt="Image 2" />
+          </div>
+          <div class="slide" id="slide3">
+              <img src="Screenshot 2024-11-02 215928.png" alt="Image 3" />
+          </div>
+          <div class="slide" id="slide4">
+              <img src="Screenshot 2024-11-02 215044.png" alt="Image 4" />
+          </div>
+      </div>
+  </div>
+</section>
+
+
+    <!-- Our Designs Section -->
+    <!-- Our Designs Section -->
+    <section id="our-designs" class="designs">
+      <h2 style="display: none">Our Designs</h2>
+      <!-- Hidden title -->
+      <div class="design-container">
+        <div class="design-item">
+          <img src="Screenshot 2024-11-02 001115.png" alt="Design 1" />
         </div>
-        <div class="portfolio-item">
-          <img src="Screenshot 2024-10-31 001013.png" alt="Project 2" />
+        <div class="design-item">
+          <img src="Screenshot 2024-11-02 001026.png" alt="Design 2" />
         </div>
-        <div class="portfolio-item">
-          <img src="Screenshot 2024-10-31 001024.png" alt="Project 3" />
+        <div class="design-item">
+          <img src="Screenshot 2024-11-02 000939.png" alt="Design 3" />
         </div>
-        <!-- Add more items as needed -->
+        <div class="design-item">
+          <img src="Screenshot 2024-11-02 000921.png" alt="Design 4" />
+        </div>
+        <div class="design-item">
+          <img src="Screenshot 2024-11-02 000856.png" alt="Design 5" />
+        </div>
+        <div class="design-item">
+          <img src="Screenshot 2024-11-02 000745.png" alt="Design 6" />
+        </div>
+        <div class="design-item">
+          <img src="Screenshot 2024-10-31 001024.png" alt="Design 7" />
+        </div>
+        <div class="design-item">
+          <img src="Screenshot 2024-10-31 001013.png" alt="Design 8" />
+        </div>
       </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
       <h2>Our Services</h2>
-      <div class="service-item">Full home interiors</div>
-      <div class="service-item">Space Planning</div>
-      <div class="service-item">3D Rendering</div>
-      <div class="service-item">3D Visualisation</div>
+      <div class="service-list">
+        <div class="service-item">Full Home Interior</div>
+        <div class="service-item">3D Visualization</div>
+        <div class="service-item">3D Rendering</div>
+        <div class="service-item">Space Planning</div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
       <h2>About Us</h2>
       <p>
-        We bring creative solutions to interior spaces. Our team is dedicated to
-        turning your vision into reality.
+
+<b>Welcome to UAStudio, where imagination meets craftsmanship!</b> <br>
+
+
+At UAStudio, we don’t just design spaces; we curate experiences. Our journey began with a simple belief: that every room holds the power to inspire and uplift. With a passionate team of visionaries, we transform mundane interiors into extraordinary havens that reflect the essence of those who inhabit them. <br>
+
+
+<b>Our Vision</b> <br>
+We envision a world where every space tells a story, where design transcends the ordinary, and every corner is a canvas for self-expression. Our mission is to create interiors that not only look stunning but also resonate with the lifestyle and personality of our clients. We thrive on blending aesthetics with functionality, ensuring that beauty is seamlessly integrated into daily living. <br>
+
+<b>Crafting Unique Narratives </b> <br>
+Every project we undertake is a collaboration, a partnership between us and our clients. We listen intently to your needs, dreams, and aspirations, turning your visions into tangible designs. Whether it’s a cozy home, an inspiring workspace, or a stylish retail environment, we tailor our approach to suit your unique narrative. <br>
+
+<b>Innovation and Sustainability</b> <br>
+In our quest for excellence, we embrace innovation and sustainability. We believe that great design should be environmentally conscious, so we incorporate eco-friendly materials and sustainable practices into our work. Our commitment to the planet guides us in crafting beautiful spaces that honor both style and nature. <br>
+
+<b>Let’s Create Together</b> 
+<br>
+Are you ready to embark on a design journey that transforms your space into something truly remarkable? Connect with us, and let’s turn your dreams into reality! <br>
+
+---
       </p>
     </section>
 
@@ -75,13 +154,30 @@
       </form>
     </section>
 
+    <!-- Social Media Links -->
+    <section class="social-media">
+      <h2>Connect with Us</h2>
+      <a
+        href="https://api.whatsapp.com/send?phone=9916201862"
+        target="_blank"
+        class="social-icon"
+      >
+        <img src="Screenshot 2024-11-02 013358.png" alt="WhatsApp" />
+      </a>
+      <a
+        href="https://www.instagram.com/YOUR_INSTAGRAM_PAGE"
+        target="_blank"
+        class="social-icon"
+      >
+        <img src="Screenshot 2024-11-02 013516.png" alt="Instagram" />
+      </a>
+    </section>
+
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Interior Design. All Rights Reserved.</p>
+      <p>&copy; 2024 UAStudio. All rights reserved.</p>
     </footer>
-    <footer>
-      <p>SHAMLAN HASAN</p>
-    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
