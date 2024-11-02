@@ -19,13 +19,15 @@ nav {
 nav h1 {
   font-family: 'serif';
   font-weight: bold;
-  font-size: 3em; /* Adjusted font size for better responsiveness */
+  font-size: 2em; /* Adjusted font size for better responsiveness */
+  flex: 1; /* Allow the title to take available space */
 }
 
 nav ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap; /* Allow the list to wrap */
+  margin-left: auto; /* Align menu items to the right */
 }
 
 nav ul li {
@@ -312,7 +314,8 @@ footer {
 
   .service-item,
   .design-item {
-    width: 100%; /* Full width for smaller screens */
+    width: 90%; /* Full width for smaller screens */
+    max-width: none; /* Remove max-width */
   }
 
   /* Additional adjustments */
@@ -324,5 +327,42 @@ footer {
   .image-slider-section h2,
   .services h2 {
     font-size: 1.8em; /* Smaller font size for headers */
+  }
+
+  /* Adjust button size */
+  .contact button {
+    max-width: 200px; /* Limit width for mobile devices */
+    margin: 20px auto; /* Center button horizontally */
+  }
+}
+
+/* Specific Styles for 375px */
+@media (max-width: 375px) {
+  nav h1 {
+    font-size: 1.5em; /* Smaller title for mobile */
+  }
+
+  .hero h2 {
+    font-size: 1.5em; /* Adjusted font size for hero section */
+  }
+
+  .hero p {
+    font-size: 0.9em; /* Smaller paragraph for better readability */
+  }
+
+  .design-item {
+    width: 90%; /* Ensure items fit well on small screens */
+  }
+
+  .service-item {
+    width: 90%; /* Ensure service items fit well */
+  }
+
+  .image-slider-section h2 {
+    font-size: 1.5em; /* Adjusted font size for header */
+  }
+
+  footer {
+    font-size: 0.8em; /* Smaller footer text for mobile */
   }
 }
