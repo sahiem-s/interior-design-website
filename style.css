@@ -8,6 +8,7 @@
 /* Navbar */
 nav {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -18,12 +19,13 @@ nav {
 nav h1 {
   font-family: 'serif';
   font-weight: bold;
-  font-size: 50px; /* Adjusted font size for better responsiveness */
+  font-size: 3em; /* Adjusted font size for better responsiveness */
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  flex-wrap: wrap; /* Allow the list to wrap */
 }
 
 nav ul li {
@@ -47,7 +49,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-  background: url('Screenshot\ 2024-10-31\ 000950.png') center/cover no-repeat;
+  background: url('Screenshot 2024-10-31 000950.png') center/cover no-repeat;
   height: 60vh; /* Responsive height */
   display: flex;
   align-items: center;
@@ -62,7 +64,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-  font-size: 2em; /* Responsive font size */
+  font-size: 2.5em; /* Responsive font size */
   margin-bottom: 20px;
 }
 
@@ -275,11 +277,11 @@ footer {
 /* Responsive Styles */
 @media (max-width: 768px) {
   nav h1 {
-    font-size: 1.8em;
+    font-size: 2em; /* Responsive adjustment */
   }
 
   .hero {
-    height: 50vh;
+    height: 50vh; /* Adjusted height */
   }
 
   .hero h2 {
@@ -311,5 +313,16 @@ footer {
   .service-item,
   .design-item {
     width: 100%; /* Full width for smaller screens */
+  }
+
+  /* Additional adjustments */
+  .design-container {
+    flex-direction: column; /* Stack designs vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  .image-slider-section h2,
+  .services h2 {
+    font-size: 1.8em; /* Smaller font size for headers */
   }
 }
